@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lucida Sans', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  overflow-x: hidden;
+}
+
+#top {
+  color: red;
+  background-color: wheat;
+  text-align: center;
+  font-size: 47px;
+  margin-top: 10px;
+  padding: 10px 0;
+}
+
+#top1 {
+  text-align: center;
+  background-color: wheat;
+  color: blue;
+  font-size: 25px;
+  margin-bottom: 20px;
+  padding: 8px 0;
+}
+
+#navbar {
+  background-color: #444;
+  color: white;
+  padding: 15px 0;
+  border-radius: 20px;
+  margin: 10px auto;
+  width: 80%;
+  max-width: 900px;
+  text-align: center;
+}
+
+#navbar img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  border: 2px solid wheat;
+}
+
+#Navcont {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+#Navcont li a {
+  text-decoration: none;
+  color: wheat;
+  font-size: 18px;
+  padding: 6px 12px;
+  border-radius: 10px;
+}
+
+#Navcont li a:hover {
+  color: rgb(175, 167, 250);
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+button, .btn {
+  padding: 10px 18px;
+  font-size: 16px;
+  background-color: tomato;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+button:hover, .btn:hover {
+  background-color: rgb(8, 207, 147);
+}
+
+section h1 {
+  font-size: 32px;
+  text-align: center;
+  margin: 30px 0 10px;
+  color: #fd0505;
+}
+
+hr {
+  margin: 20px auto;
+  width: 80%;
+  border: 1px solid #ccc;
+}
+
+#menu {
+  margin: 40px auto;
+  text-align: center;
+}
+
+.menu-table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 80%;
+  max-width: 800px;
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.menu-table th,
+.menu-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu-table th {
+  background-color: rgb(71, 73, 238);
+  color: white;
+  font-size: 18px;
+}
+
+.menu-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.container {
+  background-color: rgb(198, 252, 4);
+  padding: 20px 40px;
+  border-radius: 5px;
+  text-align: center;
+  width: fit-content;
+  margin: 40px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.container h1 {
+  color: black;
+  margin-bottom: 20px;
+}
+
+.form-control {
+  position: relative;
+  margin: 20px auto;
+  width: 300px;
+}
+
+.form-control input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px black solid;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: tomato;
+  z-index: 100;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+  outline: 0;
+  border-bottom-color: lightblue;
+}
+
+.form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  pointer-events: none;
+  color: rgb(245, 154, 138);
+}
+
+.text {
+  margin-top: 30px;
+  color: rgb(15, 67, 238);
+}
+
+.container a {
+  color: red;
+  text-decoration: underline;
+}
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  padding-bottom: 40px;
+}
+
+.form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  pointer-events: none;
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.45, 0.265, 1.5);
+}
+
+.form-control input:focus ~ label span,
+.form-control input:valid ~ label span {
+  transform: translateY(-30px);
+  color: lightblue;
+}
+.product-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 30px 20px;
+}
+
+.product-card {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.product-card p {
+  font-weight: bold;
+  color: #e91e63;
+}
+.services-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.service-card {
+  background-color: #fffbea;
+  border: 1px solid #ffe0b2;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 220px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  background-color: #fff2cc;
+  cursor: pointer;
+}
+
+.service-card img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.service-card h4 {
+  margin: 10px 0 6px;
+  color: #ff5722;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: #444;
+}
+
+h4{
+  text-align: center;
+}
+
+.hero {
+  height: 100vh;
+  background-image: url("https://png.pngtree.com/back_origin_pic/03/91/31/216a8c258305188af56217c3b58b99c5.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  margin: 40px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgb(253, 143, 0);
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 20px;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("https://wallpaperaccess.com/full/3692629.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+  opacity: 0.5;
+  z-index: -1;
+}
+.menu-table {
+  background-color: rgba(226, 240, 146, 0.87); /* semi-transparent white */
+  backdrop-filter: blur(4px);
+}
+#navbar,
+.hero,
+.service-card {
+  background-color: rgba(2, 1, 1, 0.349);
+  backdrop-filter: blur(3px);
+}
+body {
+  background-attachment: fixed;
+}
+
+.about-page::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("https://wallpaperaccess.com/full/2061460.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+  opacity: 0.4;
+  z-index: -1;
+}
+.about-content {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 40px;
+  max-width: 600px;
+  margin: 100px auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#about-section {
+  background-image: url("https://wallpaperaccess.com/full/2061460.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  color: white;
+}
+
+
